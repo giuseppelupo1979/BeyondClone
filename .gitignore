@@ -1,0 +1,12 @@
+# Build di SwiftPM (build.sh usa ~/Library/Caches/BeyondClone-build, ma per sicurezza)
+.build/
+.swiftpm/
+*.xcodeproj/
+DerivedData/
+
+# App compilata: si rigenera con ./build.sh
+BeyondClone.app/
+
+# macOS
+.DS_Store
+._*
