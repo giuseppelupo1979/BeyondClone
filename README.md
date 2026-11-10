@@ -5,11 +5,20 @@
 <h1 align="center">BeyondClone</h1>
 
 <p align="center">
-  Confronto, sincronizzazione e mirror di cartelle per macOS, sul Mac e sul NAS.<br>
-  App nativa in Swift e SwiftUI, compilabile senza Xcode.
+  Confronto, sincronizzazione e mirror di cartelle, sul computer e sul NAS.<br>
+  App native per macOS (Swift e SwiftUI) e per Windows 11 (C#, .NET 10 e WPF).
 </p>
 
-![BeyondClone mentre confronta due cartelle](docs/screenshot.png)
+| Versione | Codice e istruzioni | Scaricare |
+| --- | --- | --- |
+| macOS 14 e successivi | questa pagina (cartelle `Sources/`, `Support/`) | da compilare con `./build.sh` |
+| Windows 10 e 11, x64 e ARM64 | [`windows/`](windows/README.md) | eseguibili pronti nelle [Releases](../../releases) |
+
+![BeyondClone per Mac mentre confronta due cartelle](docs/screenshot.png)
+
+![BeyondClone per Windows, tema scuro](docs/screenshot-windows.png)
+
+Il resto di questa pagina descrive la versione per Mac; quella per Windows ha le stesse funzioni e il suo [README](windows/README.md).
 
 ## Cosa fa
 
@@ -108,4 +117,4 @@ Per rigenerare l'icona: `swift Support/make_icon.swift Support/AppIcon-1024.png`
 
 ## Come è nata
 
-Il progetto è stato sviluppato in sessioni con Claude Code: l'idea, le priorità e le correzioni di rotta sono di Giuseppe Lupo, il codice è stato scritto dai modelli Claude Fable 5.2 e Claude Opus 5.5.
+Il progetto è stato sviluppato in sessioni con Claude Code: l'idea, le priorità e le correzioni di rotta sono di Giuseppe Lupo, il codice è stato scritto dai modelli Claude Fable 5.2 e Claude Opus 5.5. La versione per Windows è stata scritta da Claude Opus 5.5 e provata in una macchina virtuale Windows 11 ARM64.
